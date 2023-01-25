@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind Form</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="./build/tailwind.css" />
+        <link rel="stylesheet" href="./css/tailwind.css" />
+    </head>
+    <body>
+        <div class="flex h-screen items-center justify-center">
+            <form id="form-1" class="w-full max-w-sm">
+                <!-- email -->
+                <div class="relative mb-6 block">
+                    <input
+                        type="email"
+                        id="email"
+                        class="peer block w-full rounded-t-lg border-0 border-b-2 border-gray-300 bg-gray-50 px-2.5 pb-2.5 pt-5 text-sm text-gray-900 invalid:border-red-600 focus:border-blue-600 focus:outline-none focus:ring-0"
+                        placeholder=" " />
+                    <label
+                        for="email"
+                        class="absolute top-4 left-2.5 z-10 origin-[0] -translate-y-4 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-invalid:text-red-600 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-blue-600"
+                        >Email</label
+                    >
+                    <p
+                        id="error-message"
+                        class="mt-2 hidden text-xs text-red-600 peer-invalid:inline peer-focus:hidden">
+                        <span class="font-medium">Oh, snapp!</span> Some error
+                        message.
+                    </p>
+                </div>
+
+                <!-- Password -->
+                <div class="relative mb-6 block">
+                    <input
+                        type="password"
+                        id="password"
+                        class="peer block w-full rounded-t-lg border-0 border-b-2 border-gray-300 bg-gray-50 px-2.5 pb-2.5 pt-5 text-sm text-gray-900 invalid:border-red-600 focus:border-blue-600 focus:outline-none focus:ring-0"
+                        placeholder=" " />
+                    <label
+                        for="password"
+                        class="absolute top-4 left-2.5 z-10 origin-[0] -translate-y-4 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-invalid:text-red-600 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-blue-600"
+                        >Password</label
+                    >
+                    <p
+                        id="error-message"
+                        class="mt-2 hidden text-xs text-red-600 peer-invalid:inline peer-focus:hidden">
+                        <span class="font-medium">Oh, snapp!</span> Some error
+                        message.
+                    </p>
+                </div>
+
+                <div class="mb-6 flex items-center">
+                    <input
+                        id="terms-and-privacy"
+                        name="terms-and-privacy"
+                        type="checkbox"
+                        class="focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 focus:ring-blue-300" />
+                    <label
+                        for="terms-and-privacy"
+                        class="ml-2 block text-sm text-gray-900"
+                        >I agree to the
+                        <a
+                            href="#"
+                            class="text-indigo-600 hover:text-indigo-500"
+                            >Terms</a
+                        >
+                        and
+                        <a
+                            href="#"
+                            class="text-indigo-600 hover:text-indigo-500"
+                            >Privacy</a
+                        ></label
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                    Register new account
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
