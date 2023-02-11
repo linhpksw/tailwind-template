@@ -50,6 +50,7 @@
   // Mỗi khi bắt đầu lại dự án chạy 2 lệnh này.
 
   1: npx tailwindcss-cli build -i css/tailwind.css -o build/tailwind.css
+     npx tailwindcss build -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch
   2: npm run dev
 
   ```
