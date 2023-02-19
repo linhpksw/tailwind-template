@@ -49,8 +49,8 @@
   // Với mỗi lệnh bạn mở 1 terminal riêng trong VS Code.
   // Mỗi khi bắt đầu lại dự án chạy 2 lệnh này.
 
-  1: npx tailwindcss-cli build -i css/tailwind.css -o build/tailwind.css
-     npx tailwindcss build -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch
+  1: npx tailwindcss build -i ./src/static/css/tailwind.css -o ./src/static/css/stylesheet.css --watch
+    
   2: npm run dev
 
   ```
